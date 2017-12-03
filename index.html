@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Fishy GIFs!</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/code.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+	<div class="row">
+		<div id="buttons" class="panel panel-default">
+			<div class="panel-heading">
+		            <h3 class="panel-title">Search for some fishy gifs! Make a selection or search below</h3>
+		    </div>
+		    <div class="search-buttons">
+				<!--Pre-load some options-->
+				<button id="search-button" data-term="salmon">
+					salmon
+				</button>
+				<button id="search-button" data-term="tarpon">
+					tarpon
+				</button>
+				<button id="search-button" data-term="catfish">
+					catfish
+				</button>
+				<button id="search-button" data-term="shark">
+					shark
+				</button>
+		    </div>
+  		</div>
+  	</div>
+
+	<div class="container">
+		<div class="row">
+	        <div class="col-md-6 panel panel-default">
+				<div class="panel-heading">
+		            <h3 class="panel-title">GIFs GIFs GIFs</h3>
+		        </div>
+		        <div class="panel-body">
+		           	<div id="gifs-appear-here">
+		        	</div>
+		        </div>
+			</div>
+			<div class="col-md-6 panel panel-default">
+				<div class="panel-heading">
+		            <h3 class="panel-title">Search for something new!</h3>
+				</div>
+				<div class="panel-body">	
+					<div id="search">
+						<form id="search-form">
+							<label for="search-input">Search: </label>
+							<input type="text" id="search-input"><br>
+							<!-- Button triggers new search term to be added -->
+							<button id="add-button" class="btn btn-default" type="submit">Add to search buttons</button>
+
+						</form>
+			        </div>
+		        </div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+  
+</body>
+
+</html>
